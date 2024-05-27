@@ -1,0 +1,78 @@
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <string.h>
+#include <iomanip.h>
+#include <vcl.h>
+#pragma hdrstop
+	ifstream in ("irkj1380.txt");
+        ofstream out ("output.txt");
+	string a, b, c, d, e, f, g, h, k, l, m, n, q, o, p, s, t;
+        getline (in,a);
+        if(a == "     2              OBSERVATION DATA    M (MIXED)           RINEX VERSION / TYPE") {
+                out << a << endl;
+        }
+        getline (in,b);
+        if(b == "CCRINEXO V2.4.1 LH  imvp                19-MAY-15 06:30     PGM / RUN BY / DATE") {
+                out << b << endl;
+        }
+        getline (in,c);
+        if(c == "no comments                                                 COMMENT") {
+                out << c << endl;
+        }
+        getline (in,d);
+        if(d == "JPS2RIN 1.40 LNX    IMVP                18-MAY-15 01:08     COMMENT") {
+                out << d << endl;
+        }
+        getline (in,e);
+        if(e == "BUILD MAY 14 2009 (C) TOPCON POSITIONING SYSTEMS            COMMENT") {
+                out << e << endl;
+        }
+        getline (in,f);
+        if(f == "IRKJ40190000.JPS                                            COMMENT") {
+                out << f << endl;
+        }
+        getline (in,g);
+        if(g == "SE TPS 00000000                                             COMMENT") {
+                out << g << endl;
+        }
+        getline (in,h);
+        if(h == "IRKJ                                                        MARKER NAME") {
+                out << h << endl;
+        }
+        getline (in,k);
+        if(k == "12313M002                                                   MARKER NUMBER") {
+                out << k << endl;
+        }
+        getline (in,l);
+        if(l == "                    VS NIIFTRI, IRKUTSK                     OBSERVER / AGENCY") {
+                out << l << endl;
+        }
+	/*                getline (in,m);
+        if(m == "     2              OBSERVATION DATA    M (MIXED)           RINEX VERSION / TYPE") {
+                out << m << endl;
+        }
+        getline (in,n);
+        if(n == "CCRINEXO V2.4.1 LH  imvp                19-MAY-15 06:30     PGM / RUN BY / DATE") {
+                out << n;
+        }
+                getline (in,q);
+        if(q == "     2              OBSERVATION DATA    M (MIXED)           RINEX VERSION / TYPE") {
+                out << q << endl;
+        }
+        getline (in,o);
+        if(o == "CCRINEXO V2.4.1 LH  imvp                19-MAY-15 06:30     PGM / RUN BY / DATE") {
+                out << o;
+        }
+                getline (in,p);
+        if(p == "     2              OBSERVATION DATA    M (MIXED)           RINEX VERSION / TYPE") {
+                out << p << endl;
+        }
+        getline (in,r);
+        if(r == "CCRINEXO V2.4.1 LH  imvp                19-MAY-15 06:30     PGM / RUN BY / DATE") {
+                out << r;
+        }
+                getline (in,s);
+        if(s == "     2              OBSERVATION DATA    M (MIXED)           RINEX VERSION / TYPE") {
+                out << s << endl;
+        }
