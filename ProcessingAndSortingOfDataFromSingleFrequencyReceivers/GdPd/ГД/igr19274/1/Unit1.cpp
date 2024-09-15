@@ -1,0 +1,26 @@
+//---------------------------------------------------------------------------
+#include <iostream>
+#include <fstream>
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+        : TForm(Owner)
+{
+        ifstream in ("igr19274.txt");
+        ofstream out ("out.txt");
+
+        string stroka;
+        for (int i=0; i<3191; i++){
+                getline(in,stroka);
+                out << stroka << endl;
+        }
+}
+//---------------------------------------------------------------------------
+ 
